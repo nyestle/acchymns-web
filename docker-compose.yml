@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  acchymns-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: acchymns-web-app:latest
+    ports:
+      - "5173:3000"
+    container_name: acchymns-web
